@@ -20,3 +20,12 @@ f = b // a
 print(f)
 f = a // b
 print(f)
+
+g = a ** 2
+print(g)
+h = pow(a, 2)
+print(h)
+i = 6 ** (1/2)
+j = pow(6, 1/2)
+print(i)
+print(j)
