@@ -47,7 +47,7 @@ import sys
 # b = sys.stdin.readline()
 # print(b)
 # print(type(b))
-lista = [6, 6.6, 34, 'a', 'b', [2, 3, 4], 'ab']
+# lista = [6, 6.6, 34, 'a', 'b', [2, 3, 4], 'ab']
 # print(lista)
 # lista.append(67)
 # print(lista)
@@ -110,15 +110,37 @@ lista = [6, 6.6, 34, 'a', 'b', [2, 3, 4], 'ab']
 # for i in lista:
 #     print(i)
 
-for i in range(0, 5):
-    for j in range(0, 5):
-        result = i+j
-        print(result)
-    print('')
+# for i in range(0, 5):
+#     for j in range(0, 5):
+#         result = i+j
+#         print(result)
+#     print('')
+#
+# licznik = 0
+# while licznik < len(lista):
+#     print(lista[licznik])
+#     licznik += 1
+# else:
+#     print('koniec petli')
+#
+# licznik = 0
+# while licznik != 10:
+#     if licznik == 7:
+#         print(licznik)
+#         break
+#     else:
+#         licznik += 1
+# else:
+#     print('licznik')
 
+lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+a = sys.stdin.readline()
 licznik = 0
 while licznik < len(lista):
-    print(lista[licznik])
-    licznik += 1
+    if lista[licznik] - int(a) == 0:
+        print(licznik, lista[licznik])
+        break
+    else:
+        licznik += 1
 else:
-    print('koniec petli')
+    print('nie daje 0')
